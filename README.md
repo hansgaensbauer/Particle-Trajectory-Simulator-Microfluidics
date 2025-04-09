@@ -2,7 +2,8 @@
 
 # ptspy: Particle Trajectory Simulator for Python
 
-![8 Particle Simulation](8-particles.png)
+![8 Particle Simulation](https://github.com/rms1000watt/Particle-Trajectory-Simulator-Microfluidics/blob/master/8-particles.png)
+
 
 ## Introduction
 
