@@ -48,7 +48,7 @@ class Plot:
     def vectorField(self,plt,X,Y,U,V,title):
         if self.plotFields:
             # Create mask corresponding to 0 fluid velocity values inside obstructions
-            M = zeros([X.quiverLength,Y.quiverLength],dtype='bool')
+            M = zeros([int(X.quiverLength),int(Y.quiverLength)],dtype='bool')
             M = (U.quiver == 0)
             
             # Mask the obstructions in the fluid velocity vector field
@@ -67,6 +67,7 @@ class Plot:
             plt.title(title)
             plt.xlabel("X [m]")
             plt.ylabel("Y [m]")
+            print("Plotting Vector Field")
             plt.grid()
             
             quiver(X.quiver,Y.quiver,U.quiver,V.quiver)                

@@ -12,7 +12,7 @@
 
 	"plot_data":{
 		"plotTrajectory":"True",
-		"plotFields":"False",
+		"plotFields":"True",
 		"scaleX":1,
 		"scaleY":0.5
 	},
