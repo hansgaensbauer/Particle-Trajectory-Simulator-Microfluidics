@@ -1,5 +1,5 @@
 # from simulator import Simulator
-from time import Time
-from rungeKuttaIntegrator import RungeKuttaIntegrator
-from bilinearInterpolation import BilinearInterpolation
-from trilinearInterpolation import TrilinearInterpolation
+from ptspy.simulator.time import Time
+from ptspy.simulator.rungeKuttaIntegrator import RungeKuttaIntegrator
+from ptspy.simulator.bilinearInterpolation import BilinearInterpolation
+from ptspy.simulator.trilinearInterpolation import TrilinearInterpolation

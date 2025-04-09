@@ -9,7 +9,7 @@ class BilinearInterpolation:
                     velocityTranspose=array([0,0]),gradESquaredTranspose=array([0,0]),repeatX=True,repeatY=False):
         """Bilinear Interpolation class for bilinear interpolation including averageVelocity
         
-        Attributes:
+        Args:
             X : X object for grid points
             Y : Y object for grid points
             coordinates : np.array([[x1,x2,x3,...],[y1,y2,y3,...]])
@@ -82,7 +82,7 @@ class BilinearInterpolation:
     
     def interpolate(self,point,indexList,fieldName='none'):
         if fieldName=='none':
-            print 'no interpolation occurring\nreturning array([0,0])\n'
+            print('no interpolation occurring\nreturning array([0,0])\n')
             return array([0,0])
         if fieldName=='velocity':
             return self.bilinearInterpolation(point,indexList,self.velocityTranspose)

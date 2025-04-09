@@ -1,1 +1,1 @@
-from plot import Plot
+from ptspy.plot.plot import Plot

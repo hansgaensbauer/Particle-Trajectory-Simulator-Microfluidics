@@ -82,7 +82,7 @@ class BilinearInterpolation:
     
     def interpolate(self,point,indexList,fieldName='none'):
         if fieldName=='none':
-            print 'no interpolation occurring\nreturning array([0,0])\n'
+            print('no interpolation occurring\nreturning array([0,0])\n')
             return array([0,0])
         if fieldName=='velocity':
             return self.bilinearInterpolation(point,indexList,self.velocityTranspose)

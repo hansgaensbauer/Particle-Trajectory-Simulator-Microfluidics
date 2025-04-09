@@ -32,7 +32,7 @@ class Data:
         self.trace = self.trace.tolist()
         
 def getAllData(configFile):
-    print "1. Importing and Configurating Data"
+    print("1. Importing and Configurating Data")
     config = jsonFromFile(configFile)
     return setupData(config)
 
@@ -82,7 +82,7 @@ def setupData(cf):
         scaleX = plotData["scaleX"],
         scaleY = plotData["scaleY"])
 
-    print "1. Done"
+    print("1. Done")
     return allData
 
 def buildParticleList(particleData,config):

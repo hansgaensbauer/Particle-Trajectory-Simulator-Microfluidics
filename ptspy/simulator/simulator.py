@@ -4,7 +4,7 @@ from numpy import append
 from numpy import newaxis
     
 def startSimulation(allData):
-    print "2. Starting Simulation"
+    print("2. Starting Simulation")
 
     time = allData["time"]
     particleList = allData["particleList"]
@@ -28,6 +28,6 @@ def startSimulation(allData):
             particle.position = integrator.particle(particle=particle)
             particle.positionList = append(particle.positionList,particle.position[:,newaxis],1)
 
-    print "2. Done"
+    print("2. Done")
     return particleList
     
